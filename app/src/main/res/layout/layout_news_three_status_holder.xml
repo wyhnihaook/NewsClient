@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll_root"
+    android:background="@drawable/selector_news_item_bg"
+    android:orientation="vertical">
+
+    <ViewStub
+        android:id="@+id/viewStub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <View style="@style/divider_all_horizontal_deep_shapeBorder"
+        android:layout_height="1dp"/>
+</LinearLayout>

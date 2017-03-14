@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rl_viewpager">
+
+    <com.sjxz.newsclient.view.ADPager
+        android:id="@+id/news_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.sjxz.newsclient.view.ADPager>
+
+    <TextView
+        android:id="@+id/news_title"
+        android:background="@color/alpha_10_white"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+<!--<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:card_view="http://schemas.android.com/apk/res-auto"-->
+    <!--android:id="@+id/card_view"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_margin="5dp"-->
+    <!--android:foreground="?android:attr/selectableItemBackground"-->
+    <!--android:paddingBottom="5dp"-->
+    <!--card_view:cardBackgroundColor="@android:color/white"-->
+    <!--card_view:cardCornerRadius="8dp"-->
+    <!--card_view:cardElevation="4dp">-->
+   <LinearLayout
+       android:id="@+id/root_ll"
+       android:padding="10dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+
+       <ImageView
+           android:scaleType="centerCrop"
+           android:layout_width="90dp"
+           android:layout_height="90dp"
+           android:id="@+id/news_icon"/>
+
+       <RelativeLayout
+           android:layout_marginLeft="16dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           >
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:maxLines="2"
+               android:ellipsize="end"
+               android:id="@+id/news_title"
+               android:textColor="@color/black"
+               android:textSize="15dp"
+               />
+
+           <TextView
+               android:layout_below="@+id/news_title"
+               android:layout_marginTop="3dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:maxLines="2"
+               android:ellipsize="end"
+               android:id="@+id/news_desc"
+               android:textColor="@color/gray"
+               android:textSize="13dp"
+               />
+
+           <RelativeLayout
+               android:layout_marginTop="3dp"
+               android:layout_below="@+id/news_desc"
+               android:id="@+id/rl_bt"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <ImageView
+                   android:layout_centerVertical="true"
+                   android:id="@+id/comefrom_icon"
+                   android:layout_width="15dp"
+                   android:layout_height="15dp"
+                   android:src="@mipmap/comefrom"/>
+
+               <TextView
+                   android:layout_centerVertical="true"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="15dp"
+                   android:textSize="12dp"
+                   android:id="@+id/news_comefrom"/>
+
+
+               <TextView
+                   android:layout_centerVertical="true"
+                   android:layout_alignParentRight="true"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textSize="12dp"
+                   android:id="@+id/news_time"/>
+
+           </RelativeLayout>
+
+       </RelativeLayout>
+
+   </LinearLayout>
+
+
+
+
+
+<!--</android.support.v7.widget.CardView>-->
+
+</RelativeLayout>
